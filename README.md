@@ -2,13 +2,13 @@
 
 -------------- .zshrc ----------------
 
-source /Users/snehshrivastava/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting.git)
 
-source /Users/snehshrivastava/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions.git)
 
-source /Users/snehshrivastava/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+[zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete.git)
 
-source /Users/snehshrivastava/.zsh/zsh-autopair/autopair.zsh
+[zsh-autopair](https://github.com/hlissner/zsh-autopair.git)
 
 ----------------
 
