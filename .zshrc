@@ -18,3 +18,6 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 setopt PROMPT_SUBST
 PROMPT='%F{magenta}==>%f %F{blue}${PWD/#$HOME/~}%f %F{cyan}${vcs_info_msg_0_}%f%F{green} ==> %f'
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/snehshrivastava/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/snehshrivastava/Downloads/google-cloud-sdk/path.zsh.inc'; fi
