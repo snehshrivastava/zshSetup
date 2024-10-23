@@ -13,3 +13,7 @@
 ----------------
 
 put the above git repo in .zsh folder
+
+# for oh my zsh
+
+https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o
