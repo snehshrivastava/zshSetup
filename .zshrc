@@ -17,7 +17,8 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT='%F{magenta}==>%f %F{blue}${PWD/#$HOME/~}%f %F{cyan}${vcs_info_msg_0_}%f%F{green} ==> %f'
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/snehshrivastava/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/snehshrivastava/Downloads/google-cloud-sdk/path.zsh.inc'; fi
