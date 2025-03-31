@@ -116,7 +116,15 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT='%F{magenta}==>%f %F{blue}${PWD/#$HOME/~}%f %F{cyan}${vcs_info_msg_0_}%f%F{green} ==> %f'
+
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+# export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+# export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
 export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+
+# for compilers
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
