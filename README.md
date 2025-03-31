@@ -3,12 +3,16 @@
 -------------- .zshrc ----------------
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting.git)
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions.git)
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete.git)
+git clone https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 
 [zsh-autopair](https://github.com/hlissner/zsh-autopair.git)
+git clone https://github.com/hlissner/zsh-autopair.git $ZSH_CUSTOM/plugins/zsh-autopair
 
 ----------------
 
