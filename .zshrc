@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete zsh-autopair)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete zsh-autopair you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,12 +119,14 @@ PROMPT='%F{magenta}==>%f %F{blue}${PWD/#$HOME/~}%f %F{cyan}${vcs_info_msg_0_}%f%
 
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 # export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
-# export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
-export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
+# export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
+# export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+# export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
 
 # for compilers
-# export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
