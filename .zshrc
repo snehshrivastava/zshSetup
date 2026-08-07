@@ -26,7 +26,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -129,4 +129,28 @@ export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 # export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"alias idea="open -a \"IntelliJ IDEA.app\""
+# export CLAUDE_CONFIG_DIR="/path/to/your/secure/persistent/folder"
+# Raise open-file limit (macOS launchd default is only 256) — fixes "too many open files"
+ulimit -n 65536
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/snehshrivastava/.lmstudio/bin"
+# End of LM Studio CLI section
+
+export PATH="$HOME/.local/bin:$PATH"
+export HEADROOM_OUTPUT_SHAPER=1
+export HEADROOM_LEARN_CLI_IDLE_TIMEOUT_SECS=300
+export HEADROOM_MODE=cache
+
+# never ask before listing completion possibilities
+LISTMAX=1000
+
+# show ambiguous completions as a selectable menu instead of asking y/n
+zstyle ':completion:*' menu select
+
+# zsh-autocomplete: tame it so it stops interrupting normal typing
+zstyle ':autocomplete:*' min-input 2        # don't pop up until 2+ chars typed
+zstyle ':autocomplete:*' delay 0.3          # wait before popping suggestions
+zstyle ':autocomplete:*' list-lines 8       # cap menu height
+bindkey $'\r' accept-line                   # keep Enter = run line, not accept-suggestion
