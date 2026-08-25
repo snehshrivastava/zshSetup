@@ -74,6 +74,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete zsh-au
 
 source $ZSH/oh-my-zsh.sh
 
+# default autosuggest fg=8 (~#414868) is nearly invisible on tokyonight's dark bg
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#565f89'
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -126,10 +129,10 @@ export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
 
 # for compilers
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 # export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"alias idea="open -a \"IntelliJ IDEA.app\""
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include -I/opt/homebrew/opt/node@22/include"
+alias idea="open -a \"IntelliJ IDEA.app\""
 # export CLAUDE_CONFIG_DIR="/path/to/your/secure/persistent/folder"
 # Raise open-file limit (macOS launchd default is only 256) — fixes "too many open files"
 ulimit -n 65536
@@ -141,7 +144,7 @@ export PATH="$PATH:/Users/snehshrivastava/.lmstudio/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export HEADROOM_OUTPUT_SHAPER=1
 export HEADROOM_LEARN_CLI_IDLE_TIMEOUT_SECS=300
-export HEADROOM_MODE=cache
+export HEADROOM_MODE=token
 
 # never ask before listing completion possibilities
 LISTMAX=1000
